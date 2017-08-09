@@ -1,0 +1,92 @@
+
+/* ==========================================================================
+Base
+========================================================================== */
+html {
+    width: 100%;
+    height: 100%;
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+html, html a {
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); }
+
+html, button, input, select, textarea {
+    font-family: 'Varela Round', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: 'Varela Round', sans-serif;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+/* ==========================================================================
+Typography
+========================================================================== */
+
+h1 {  font-size: 2em; margin: 0.67em 0;}
+p { margin: 1em 0; }
+
+/* ==========================================================================
+Global Styles
+========================================================================== */
+
+h1 { color: #353535; }
+p { color: #8c9398; word-spacing: 1px; line-height: 25px; font-size: 14px; }
+.inner { padding-top: 170px; }
+
+/* ==========================================================================
+Landing Page
+========================================================================== */
+.landing {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.landing .landing-body {
+    vertical-align: middle;
+}
+
+.landing h1 {
+    font-size: 40px;
+    letter-spacing: 12px;
+    margin: 10px;
+}
+
+.landing h1 span {
+    color: #a1a9b0;
+    display: inline-block;
+}
+
+.landing p {
+    letter-spacing: 1px;
+}
+
+@media (min-width: 768px) {
+    .landing {
+        height: 100%;
+        padding: 0;
+    }
+    .landing .landing-body .landing-heading {
+        font-size: 100px;
+    }
+    .landing .landing-body .landing-text {
+        font-size: 26px;
+    }
+}
