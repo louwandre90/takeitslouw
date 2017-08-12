@@ -64,10 +64,6 @@ $(window).load(function() {
         }
     });
 
-});
-
-$(window).load(function() {
-
     $('#venueSlider').flexslider({
         animation: "slide",
         directionNav: false,
@@ -79,7 +75,20 @@ $(window).load(function() {
         }
     });
 
+    $('#teamSlider').flexslider({
+        animation: "slide",
+        directionNav: false,
+        controlNav: true,
+        touch: true,
+        pauseOnHover: true,
+        start: function() {
+            $.waypoints('refresh');
+        }
+    });
+
 });
+
+
 
 /***************** Overlays ******************/
 
