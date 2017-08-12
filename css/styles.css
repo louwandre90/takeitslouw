@@ -89,6 +89,8 @@ a { color: #353535; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-
 a:hover, a:focus { color: #3dc9b3; text-decoration: none; }
 .inner { padding-top: 100px; }
 .section-padding { padding: 50px 0 0px }
+.nopadding { padding: 0; }
+.wrapper { height: 650px; }
 
 @media (max-width: 450px) {
     .landing h4 {
@@ -171,7 +173,6 @@ Landing Page
 /* ==========================================================================
 Information
 ========================================================================== */
-/*.information-wrapper { margin: 70px 0 0; }*/
 .info-icon {
     height: 175px;
     width: 175px;
@@ -185,7 +186,44 @@ Information
         margin: 0 auto 20px;
     }
 }
+
+
+
 /* ==========================================================================
+iPhone Section
+========================================================================== */
+.registry-background {
+    width: 50%;
+    float: left;
+    height: 100%;
+    box-shadow: inset -15px -11px 40px -6px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: inset -15px -11px 40px -6px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: inset -15px -11px 40px -6px rgba(0, 0, 0, 0.1);
+    z-index: 1; }
+.fluid-white {
+    width: 50%; background: #ffffff;
+    float: right;
+    height: 100%;
+    z-index: 2;
+}
+.registry-container {
+    position: relative;
+}
+
+.gifts {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 50px;
+}
+
+/* ==========================================================================
+FlexSlider Custom CSS
+========================================================================== */
+#servicesSlider { margin-top: 70px; }
+ul.slides li { margin-bottom: 20px; }
 
 
 /* ==========================================================================
@@ -195,6 +233,12 @@ Waypoints
 .bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight { visibility: visible; }
 .delay-05s { animation-delay: 0.5s; -webkit-animation-delay: 0.5s; }
 .delay-1s { animation-delay: 1s; -webkit-animation-delay: 1s; }
-.wp3 { background: url('../img/iphone-bg.png') no-repeat center center; background-position: 200px 10px; height: 100%; }
+.wp3 {
+    background-color: white;
+    background: url('../img/registry-bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+    height: 100%
+}
 
 

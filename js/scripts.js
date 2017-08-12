@@ -47,3 +47,21 @@ $(function() {
         event.preventDefault();
     });
 });
+
+
+/***************** Flexsliders ******************/
+
+$(window).load(function() {
+
+    $('#servicesSlider').flexslider({
+        animation: "slide",
+        directionNav: false,
+        controlNav: true,
+        touch: true,
+        pauseOnHover: true,
+        start: function() {
+            $.waypoints('refresh');
+        }
+    });
+
+});
