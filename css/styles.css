@@ -60,7 +60,7 @@ h1 {  font-size: 5em; margin: 0.67em 0; font-family: lemon-tuesday}
 h2 {  font-size: 3em; margin: 1em 0; font-family: futura-light}
 h3 {  font-size: 2em; margin: 1em 0; font-family: futura-light}
 h3::after { content: " "; border: solid 1px #e4ebf4; display: block; width: 35px; margin: 10px auto; }
-h4 {  font-size: 1.2em; margin: 0.67em 0; font-family: futura-book}
+h4 {  font-size: 1.2em; margin: 0.5em 0 0.2em 0; font-family: futura-book}
 p { font-size: 1.2em; margin: 1em 0; font-family: futura-book}
 
 /* ==========================================================================
@@ -216,11 +216,64 @@ Quote Section
 }
 
 /* ==========================================================================
+Detail Section
+========================================================================== */
+.effects { padding-left: 15px; }
+.effects .img { position: relative; margin-bottom: 0px; position: relative; z-index: 1; overflow: hidden; }
+.effects .img:nth-child(n) { margin-right: 5px; }
+.effects .img:first-child { margin-left: -15px; }
+.effects .img:last-child { margin-right: 0; }
+.effects .img img { display: block; margin: 0; padding: 0; height: auto; }
+.overlay { display: block; position: absolute; z-index: 20; background: rgba(161, 169, 176, 0.8); overflow: hidden; transition: all 0.5s; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s; }
+a.close-overlay { display: block; position: absolute; top: 0; right: 0; z-index: 100; width: 45px; height: 45px; font-size: 20px; font-weight: 700; color: #fff; line-height: 45px; text-align: center; background-color: #000; cursor: pointer; }
+a.close-overlay.hidden { display: none; }
+a.expand { font-family: futura-light; display: block; position: absolute; z-index: 100; text-align: center; color: #fff; font-weight: 600; font-size: 14px; text-transform: uppercase; line-height: 30px; }
+.overlay-effect .img i { font-size: 30px; }
+.overlay-effect .overlay { bottom: 0; left: 0; right: 0; width: 100%; height: 100%; opacity: 0; }
+.overlay-effect .overlay a.expand { left: 0; right: 0; bottom: 47%; margin: 0 auto -30px auto; }
+.overlay-effect .img.hover .overlay { height: 100%; opacity: 1; }
+.img img { width: -webkit-calc(100% + 40px) !important; width: calc(100% + 40px) !important; -webkit-transition: opacity 0.35s, -webkit-transform 0.35s; transition: opacity 0.35s, transform 0.35s; -moz-transition: opacity 0.35s, -moz-transform 0.35s; -o-transition: opacity 0.35s, -o-transform 0.35s; -webkit-transform: translate3d(-40px, 0, 0); transform: translate3d(-40px, 0, 0); -ms-transform: translate3d(-40px, 0, 0); }
+.img:hover img { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); -ms-transform: translate3d(-40px, 0, 0); }
+.designs { position: absolute; left: 0; right: 0; margin-left: auto; margin-right: auto; top: 50px; }
+
+
+/* ==========================================================================
+Venue Section
+========================================================================== */
+
+#map {
+    width: 650px;
+    height: 500px;
+}
+
+/* ==========================================================================
+FYI Section
+========================================================================== */
+.fyi {
+    background-color: rgba(161, 169, 176, 0.8);
+}
+.fyi-icon {
+    height: 75px;
+    width: 75px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.fyi p {
+    margin: 0 0;
+    font-size: 1em;
+    color: black;
+}
+
+
+
+
+/* ==========================================================================
 FlexSlider Custom CSS
 ========================================================================== */
-#servicesSlider { margin-top: 20px; }
+#giftsSlider { margin-top: 20px; }
 ul.slides li { margin-bottom: 20px; }
-
 
 /* ==========================================================================
 Waypoints
@@ -236,5 +289,7 @@ Waypoints
     background-position: 100% 100%;
     height: 100%
 }
+
+
 
 
