@@ -75,7 +75,7 @@ p { color: #8c9398; word-spacing: 1px; line-height: 25px;}
 a { color: #353535; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; }
 a:hover, a:focus { color: #3dc9b3; text-decoration: none; }
 .inner { padding-top: 100px; }
-.section-padding { padding: 50px 0 0px }
+.section-padding { padding: 50px 0 50px }
 .nopadding { padding: 0; }
 .wrapper { height: 500px; }
 .dark-bg { background: #f3f5f8; }
@@ -137,6 +137,10 @@ Landing Page
 /* ==========================================================================
 Information
 ========================================================================== */
+.information h2 {
+    float: left;
+}
+
 .info-icon {
     height: 175px;
     width: 175px;
@@ -150,6 +154,9 @@ Information
 /* ==========================================================================
 Registry Section
 ========================================================================== */
+/*.registry h2 {*/
+    /*float: right;*/
+/*}*/
 .registry-background {
     width: 50%;
     float: left;
@@ -304,17 +311,35 @@ Footer
 .up-btn { width: 50px; height: 50px; border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; -o-border-radius: 50%; background: rgba(61, 201, 179, 0.5); display: block; margin: 0 auto; color: #fff; font-size: 18px; line-height: 46px; text-align: center; position: absolute; top: -26px; left: 0; right: 0; margin-left: auto; margin-right: auto; }
 .up-btn:hover, up-btn:focus { color: #fff; background: rgba(61, 201, 179, 1); }
 footer a { color: #a1a9b0; }
-footer { background-color: #242830; padding: 40px 0 30px; }
-footer p { color: #fff; }
+footer { background-color: #5c6368; padding: 40px 0 30px; }
+footer p {
+    color: #fff;
+    margin-bottom: 0;
+    font-family: futura-light}
 ul.legals { list-style: none; color: #fff; line-height: 25px; }
 ul.legals li { display: inline-block; }
 ul.legals li::after { content: " |"; }
 ul.legals li:last-child::after { content: ""; }
 .legals { text-align: left; }
 .credit { text-align: right; }
-i {
-    color: white;
+footer .monogram {
+    height: 50px;
+    width: 50px;
+    margin: 0;
 }
+
+.initials {
+    font-family: lemon-tuesday;
+    margin: 2px 0 10px 0;
+    font-size: 2em;
+}
+.slogan{
+    font-family: lemon-tuesday; font-size: 1em;
+    margin: 0;
+}
+
+
+
 
 
 /* ==========================================================================
