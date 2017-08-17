@@ -172,9 +172,9 @@ Registry Section
     width: 50%;
     float: left;
     height: 100%;
-    box-shadow: inset -15px -11px 40px -6px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: inset -15px -11px 40px -6px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: inset -15px -11px 40px -6px rgba(0, 0, 0, 0.1);
+    /*box-shadow: inset -15px -11px 40px -6px rgba(0, 0, 0, 0.1);*/
+    /*-moz-box-shadow: inset -15px -11px 40px -6px rgba(0, 0, 0, 0.1);*/
+    /*-webkit-box-shadow: inset -15px -11px 40px -6px rgba(0, 0, 0, 0.1);*/
     z-index: 1; }
 .fluid-white {
     width: 50%; background: #ffffff;
@@ -341,20 +341,24 @@ FYI Section
 
 .fyi p {
     margin: 0 0;
-    font-size: 1em;
+    font-size: 1.1em;
     color: #5c6368;
 }
 
 /* ==========================================================================
 Team Section
 ========================================================================== */
-.team img { margin-bottom: 40px; }
-ul.social-buttons { list-style: none; margin: 0; padding: 0; }
-ul.social-buttons li { display: inline-block; margin-right: 10px; }
-ul.social-buttons li:last-child { margin-right: 0; }
-.social-btn { width: 40px; height: 40px; border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; -o-border-radius: 50%; background: #242830; display: inline-block; color: #fff; font-size: 17px; line-height: 40px; text-align: center; }
-.social-btn:hover, .social-btn:focus { background: #ffffff; color: #fff; }
-.social { margin-top: 25px }
+.team img {
+    margin-bottom: 40px;
+    height: 200px;
+}
+
+.team p {
+    float: right;
+    margin-right: 40px;
+}
+
+
 
 /* ==========================================================================
 Summarise section
