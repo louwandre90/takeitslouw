@@ -13,11 +13,10 @@
 
     <!-- Custom Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-    <!--<link href="css/font-awesome.min.css" rel="stylesheet">-->
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <!--<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">-->
 
     <!-- Custom CSS -->
+    <link href="css/spinner.css" rel="stylesheet" >
     <link href="css/flexslider.css" rel="stylesheet" >
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/queries.css" rel="stylesheet">
@@ -33,6 +32,19 @@
 </head>
 <body id="top">
 
+    <!-- Spinner -->
+    <div id="loader-wrapper">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+    </div>
+
+
     <!-- Intro Header -->
     <header class="landing">
 
@@ -41,8 +53,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2 text-center inner">
-                            <h1 class="animated fadeInDown">André & Stephanie</h1>
-                            <h4 class="animated fadeInUp delay-05s">Ons hou 'n wit partytjie en wil jou graag daar hê! <em>YAY!</em></h4>
+                            <h1>André & Stephanie</h1>
+                            <h4>Ons hou 'n wit partytjie en wil jou graag daar hê! <em>YAY!</em></h4>
                         </div>
                     </div>
                 </div>
@@ -50,11 +62,12 @@
         </section>
     </header>
 
+
     <section class="information text-center section-padding" id="information">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 text-center">
-                    <a href="#information" class="landing-page-btn animated bounceIn delay-05s page-scroll">Jy het sekerlik 'n paar vrae ?</a>
+                    <a href="#information" class="landing-page-btn page-scroll">Jy het sekerlik 'n paar vrae ?</a>
                 </div>
             </div>
             <h2>Ons het 'n paar antwoorde ...</h2>
@@ -391,6 +404,7 @@
 
 
 
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>
@@ -400,6 +414,8 @@
     <script src="js/scripts.js"></script>
     <script src="js/jquery.flexslider.js"></script>
     <script src="js/modernizr.js"></script>
+
+    <script src="js/spinner.js"></script>
 
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwtyKncNJ9SsLXIK-qDbTFs3GFacK0eFk"></script>
     <script src="js/map.js"></script>

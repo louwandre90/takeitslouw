@@ -56,12 +56,12 @@ a:active, a:hover { outline: 0; }
 Typography
 ========================================================================== */
 
-h1 {  font-size: 5em; margin: 0.67em 0; font-family: lemon-tuesday}
-h2 {  font-size: 3em; margin: 1em 0; font-family: futura-light}
-h3 {  font-size: 2em; margin: 1em 0; font-family: futura-light}
+h1 {  font-size: 5em; margin: 0.67em 0; font-family: lemon-tuesday, cursive}
+h2 {  font-size: 3em; margin: 1em 0; font-family: futura-light, sans-serif}
+h3 {  font-size: 2em; margin: 1em 0; font-family: futura-light, sans-serif}
 h3::after { content: " "; border: solid 1px #e4ebf4; display: block; width: 35px; margin: 10px auto; }
-h4 {  font-size: 1.5em; margin: 0.5em 0 0.2em 0; font-family: futura-book}
-p { font-size: 1.2em; margin: 1em 0; font-family: futura-book}
+h4 {  font-size: 1.5em; margin: 0.5em 0 0.2em 0; font-family: futura-book, sans-serif}
+p { font-size: 1.2em; margin: 1em 0; font-family: futura-book, sans-serif}
 
 /* ==========================================================================
 Global Styles
@@ -95,7 +95,7 @@ Landing Page
     text-align: center;
     color: white;
     background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
-    background-color: black;
+    background-color: white;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -233,7 +233,7 @@ Quote Section
 .quote h2 em {
     font-size: 30px;
     font-style: normal;
-    font-family: lemon-tuesday;
+    font-family: lemon-tuesday, cursive;
     text-transform: lowercase;
 
 }
@@ -403,12 +403,12 @@ footer .monogram {
 }
 
 .initials {
-    font-family: lemon-tuesday;
+    font-family: lemon-tuesday, cursive;
     margin: 2px 0 10px 0;
     font-size: 2em;
 }
 .slogan{
-    font-family: lemon-tuesday; font-size: 1em;
+    font-family: lemon-tuesday, cursive; font-size: 1em;
     margin: 0;
 }
 
@@ -429,6 +429,7 @@ Waypoints
 .bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight { visibility: visible; }
 .delay-05s { animation-delay: 0.5s; -webkit-animation-delay: 0.5s; }
 .delay-1s { animation-delay: 1s; -webkit-animation-delay: 1s; }
+.delay-15s { animation-delay: 1s; -webkit-animation-delay: 1.5s; }
 .wp3 {
     background-color: white;
     background: url('../img/registry-bg.jpg') no-repeat;
