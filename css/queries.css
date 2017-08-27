@@ -15,10 +15,27 @@
 	.wp3 { background-position: 50px 0; }
 	.quote { background-attachment: scroll; }
 	.subscribe { background-attachment: scroll; }
+
+	/*.landing-page-btn {margin-top: -25%;}*/
+
+
+
 }
+
+@media screen and (min-width:1024px) {
+	.landing-page-btn {margin-top: -25%;}
+	.wrapper { background: #f3f5f8; height: 550px; }
+
+	.wp3 { background-position: 0px 0; }
+}
+
+
+
+
 /* 1200px (Small Desktop, Netbook) */
 @media screen and (max-width:1280px) {
-	.wp3 { background-position: 50px 0; }
+
+
 }
 /* Bootstrap 990px Breakpoint to 480px */
 @media screen and (min-width:480px) and (max-width:991px) {
@@ -28,6 +45,16 @@
 	.wp2, .wp4, .wp5, .light-box { margin-bottom: 30px; }
 	.legals { text-align: center; margin: 0; padding: 0; }
 	.credit { text-align: center; }
+
+
+
+	.gifts h2 {margin-top: 30px}
+
+	.float-quote {
+		height: 60px;
+	}
+
+
 }
 
 /* mobile phones */
@@ -50,5 +77,24 @@
 
 	.info-icon { margin: 0 auto 20px; }
 
+	.gifts h2 {margin-top: 30px}
+	.wp3 { background-position: 50px 0; }
+	.wrapper { height: 600px; }
 
+	.detail .container {margin-top: 30px}
+	.venue .container {margin-top: 30px}
+
+	.light-box {
+		margin-bottom: 20px;
+		opacity: 0.9;
+		height: 170px;
+	}
+
+	.team img {
+		margin-bottom: 20px;
+	}
+
+	.float-quote {
+		height: 60px;
+	}
 }
