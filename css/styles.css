@@ -365,18 +365,18 @@ Summarise section
 ========================================================================== */
 .summarise {
     background: url('../img/summarise-bg.jpg') no-repeat center center;
+    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
     background-attachment: fixed;
-    padding: 50px 0;
+    /*padding: 50px 0;*/
 }
 
 .summarise-details { margin: 70px 0; }
 .summarise-details h2 { font-size: 20px; }
 .summarise-details h2 span { display: block; color: #3dc9b3; text-transform: uppercase; letter-spacing: 1px; font-size: 14px; margin-top: 15px; }
-.summarise-wrap { position: relative; }
+/*.summarise-wrap { position: relative; }*/
 
 /* ==========================================================================
 Footer
@@ -430,7 +430,7 @@ Waypoints
 .delay-05s { animation-delay: 0.5s; -webkit-animation-delay: 0.5s; }
 .delay-1s { animation-delay: 1s; -webkit-animation-delay: 1s; }
 .delay-15s { animation-delay: 1s; -webkit-animation-delay: 1.5s; }
-.wp3 {
+.wp3-image {
     background-color: white;
     background: url('../img/registry-bg.jpg') no-repeat;
     background-size: cover;
