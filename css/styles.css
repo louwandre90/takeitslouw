@@ -74,7 +74,7 @@ h4 { color: #000000; word-spacing: 1px; line-height: 25px;}
 p { color: #8c9398; word-spacing: 1px; line-height: 25px;}
 a { color: #353535; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; }
 a:hover { color: #1b86c7; text-decoration: none;}
-a:focus { color: #ffffff; text-decoration: none; }
+a:focus { color: #1a86c7; text-decoration: none; }
 .inner { padding-top: 100px; }
 .section-padding { padding: 50px 0 50px }
 .nopadding { padding: 0; }
@@ -365,12 +365,12 @@ Summarise section
 ========================================================================== */
 .summarise {
     background: url('../img/summarise-bg.jpg') no-repeat center center;
-    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    background-size: cover;
     background-attachment: fixed;
-    /*padding: 50px 0;*/
+    padding: 50px 0;
 }
 
 .summarise-details { margin: 70px 0; }
